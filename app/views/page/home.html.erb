@@ -1,0 +1,23 @@
+<h1 class="text-warning container">Hello BG 😀 😂 welcome to gossip page</h1></br>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Author_id</th>
+      <th scope="col">Author</th>
+      <th scope="col">Content</th>
+    </tr>
+  </thead>
+  <tbody>
+  	<% @gossip.each do |gossip| %>
+    <tr>
+    
+      <th scope="row"><%= gossip.id %></th>
+      <td><%= gossip.author %></td>
+      <td><%= gossip.content %><a href = "/index/<%= gossip.id %>" class = "btn btn-primary"> page du potin</a></td>
+
+
+    </tr>
+        <% end %>
+  </tbody>
+</table>
