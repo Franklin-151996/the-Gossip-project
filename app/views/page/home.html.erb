@@ -13,9 +13,9 @@
   	<% @gossip.each do |gossip| %>
     <tr>
     
-      <th scope="row"><%= gossip.id %></th>
-      <td><%= gossip.author %></td>
-      <td><%= gossip.content %></td>
+      <th scope="row" class="text-white"><%= gossip.id %></th>
+      <td class="text-white"><%= gossip.author %></td>
+      <td class="text-white"><%= gossip.content %></td>
       <td><a href = "/index/<%= gossip.id %>" class = "btn btn-primary"> page du potin</a></td>
 
 
